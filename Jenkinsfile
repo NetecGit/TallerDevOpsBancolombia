@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Clonar repositorio') {
             steps {
-                git branch: 'practica2.2/jenkins-docker',
+                git branch: 'practica2.2/jenkins_docker',
                     url: 'https://github.com/NetecGit/TallerDevOpsBancolombia.git',
                     credentialsId: 'github-credentials'
             }
