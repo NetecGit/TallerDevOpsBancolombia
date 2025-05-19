@@ -41,7 +41,7 @@ pipeline {
         stage('Desplegar contenedor') {
             steps {
                 script {
-                    sh 'docker run -d --name $CONTAINER_NAME -p $PORT:8080 $IMAGE_NAME'
+                    sh 'docker run -d --name $CONTAINER_NAME -p $PORT:8888 $IMAGE_NAME'
                 }
             }
         }
